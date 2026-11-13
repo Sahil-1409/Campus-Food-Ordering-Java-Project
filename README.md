@@ -6,20 +6,7 @@ A JavaFX + JDBC + MySQL desktop project for VS Code. Includes a modern food-app-
 - JDK 21 (check `java -version`)
 - Maven 3.9+ (`mvn -version`)
 - MySQL Server 8+ running locally
-- VS Code with **Extension Pack for Java**
-
-## Run in VS Code
-1. Extract the ZIP, then open the **QuickBite** folder in VS Code (`File > Open Folder`).
-2. Start MySQL server. Create a MySQL user or use your existing root user. **No manual SQL import is needed**: the app creates the database/tables and sample menu on first run (the user must have CREATE DATABASE privileges).
-3. Set the database credentials in your VS Code terminal:
-   - **Windows PowerShell**: `$env:QB_DB_USER="root"; $env:QB_DB_PASS="YOUR_MYSQL_PASSWORD"`
-   - **Windows CMD**: `set QB_DB_USER=root` and `set QB_DB_PASS=YOUR_MYSQL_PASSWORD`
-   - **macOS/Linux**: `export QB_DB_USER=root QB_DB_PASS=YOUR_MYSQL_PASSWORD`
-4. In the **same terminal**, run `mvn clean javafx:run`.
-5. JavaFX window opens. Click **Create account** to sign up as a student.
-
-Optional connection override: `QB_DB_URL=jdbc:mysql://localhost:3306/quickbite?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true`.
-
+- VS Code with **Extension Pack for 
 ## Demo admin login
 - Email: `admin@quickbite.local`
 - Password: `Admin@123`
